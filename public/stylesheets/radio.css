@@ -1,0 +1,389 @@
+    body {
+        /*        background: #f6a893;*/
+        background-image: url("http://subtlepatterns2015.subtlepatterns.netdna-cdn.com/patterns/retina_wood.png");
+    }
+    
+    .frame {
+        display: flex;
+        align-content: center;
+        justify-content: center;
+    }
+    
+    .case {
+        margin-top: 30px;
+        background: #f0ebe5;
+        display: flex;
+        align-content: center;
+        align-self: center;
+        flex-direction: column;
+        max-width: 800px;
+        width: 680px;
+        height: 700px;
+        border-radius: 4px;
+        align-items: center;
+        box-shadow: 0 2px 2px 0px rgba(0, 0, 0, 0.43);
+    }
+    
+    .screws {
+        display: flex;
+        flex-direction: row;
+        height: 10px;
+        width: 660px;
+        margin: 10px;
+        justify-content: space-between;
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+    
+    .screw {
+        display: flex;
+        margin-top: 15px;
+        flex-direction: row;
+        transform: translate(90px) rotate(20deg);
+        transform-origin: 0 -250px;
+    }
+    
+    .screw2 {
+        display: flex;
+        margin-top: 15px;
+        flex-direction: row;
+        transform: translate(190px) rotate(120deg);
+        transform-origin: -82px -52px;
+    }
+    
+    .right {
+        border-bottom-right-radius: 15px;
+        border-top-right-radius: 15px;
+        height: 15px;
+        width: 7px;
+        margin-left: -1px;
+        border: 1px solid #555;
+    }
+    
+    .left {
+        border-bottom-left-radius: 15px;
+        border-top-left-radius: 15px;
+        height: 15px;
+        width: 7px;
+        border: 1px solid #555;
+    }
+    
+    .tuner {
+        width: 600px;
+        height: 160px;
+        background: white;
+        margin-top: 15px;
+        border: 1px solid #EDEADE;
+        border-radius: 5px;
+    }
+    
+    .button {
+        height: 40px;
+        width: 40px;
+        overflow: hidden;
+        position: relative;
+        float: left;
+        box-sizing: border-box;
+        border-radius: 5px;
+        margin: 2px;
+        border: 2px solid #EDEADE;
+        /*            box-shadow: inset 0 2px 2px #fff, inset 0 -1px 2px #aeaba4;*/
+        background: #FFFCF4;
+        /*
+            background: -moz-linear-gradient(top, #e9e4da 0%, #e9e5db 100%);
+            background: -webkit-linear-gradient(top, #e9e4da 0%, #e9e5db 100%);
+            background: linear-gradient(to bottom, #e9e4da 0%, #e9e5db 100%);
+*/
+        box-shadow: none;
+    }
+    
+    .button:after {
+        content: '';
+        display: block;
+        box-sizing: border-box;
+        position: absolute;
+        top: 12px;
+        left: 12px;
+        width: 12px;
+        height: 12px;
+        border-radius: 50px;
+        box-shadow: inset 0 0 3px #fff, 0 0 10px #fff, inset 0 5px 10px rgba(0, 0, 0, .03);
+        color: black;
+        background: -moz-linear-gradient(top, #d7d0c0 0%, #fefefe 100%);
+        background: -webkit-linear-gradient(top, #d7d0c0 0%, #fefefe 100%);
+        background: #0166B9;
+        opacity: 0.7;
+    }
+    
+    .button:active,
+    .button:focus,
+    .button.active {
+        background-image: none;
+        outline: 0;
+        -webkit-box-shadow: none;
+        box-shadow: none;
+    }
+    
+    .record {
+        height: 40px;
+        width: 40px;
+        overflow: hidden;
+        position: relative;
+        float: left;
+        box-sizing: border-box;
+        border-radius: 5px;
+        margin: 2px;
+        border: 2px solid #EDEADE;
+        background: #FFFCF4;
+        box-shadow: none;
+    }
+    
+    .record:after {
+        content: '';
+        display: block;
+        box-sizing: border-box;
+        position: absolute;
+        color: #FD7D50;
+        text-align: center;
+        font-size: 40px;
+        line-height: 2px;
+        top: 12px;
+        left: 12px;
+        width: 12px;
+        height: 12px;
+        border-radius: 50px;
+        box-shadow: inset 0 0 3px #fff, 0 0 10px #fff, inset 0 5px 10px rgba(0, 0, 0, .03);
+        background: -moz-linear-gradient(top, #d7d0c0 0%, #fefefe 100%);
+        background: -webkit-linear-gradient(top, #d7d0c0 0%, #fefefe 100%);
+        background: #FD7D50;
+    }
+    
+    .controls {
+        display: flex;
+        flex-direction: row;
+        height: 40px;
+        align-items: center;
+        justify-content: space-between;
+    }
+    
+    .control {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 50px;
+    }
+    
+    .controlLabel {
+        font-size: 7px;
+        font-family: sans-serif;
+        margin: 5px;
+        font-weight: bold;
+        color: #555;
+        width: 40px;
+        letter-spacing: 1px;
+        text-align: center;
+        text-transform: uppercase;
+    }
+    
+    .button-block {
+        display: flex;
+        flex-direction: row;
+    }
+    
+    .emotion-block {
+        display: flex;
+        flex-direction: row;
+        align-content: stretch;
+        align-items: stretch;
+    }
+    
+    .section {
+        display: flex;
+        flex-direction: row;
+        height: 430px;
+        width: 600px;
+        /*    background: white;*/
+        margin-top: 20px;
+    }
+    
+    .logo {}
+    
+    .logoImage {
+        width: 100px;
+        opacity: .5;
+    }
+    
+    .grill {
+        display: flex;
+        flex-direction: row;
+        width: 50%;
+        /*            background: #B0AEA6;*/
+        border: 1px solid #EDEADE;
+    }
+    
+    .knobs {
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+        align-items: center;
+        justify-content: space-between;
+    }
+    
+    .dial {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 180px;
+        height: 180px;
+    }
+    
+    .dialLabels {
+        display: flex;
+        flex-direction: row;
+        margin: 10px;
+        align-content: center;
+        justify-content: center;
+    }
+    
+    .anger {
+        height: 16px;
+        width: 16px;
+        border-radius: 30px;
+        background: #FD7D50;
+        margin: 10px;
+        text-transform: uppercase;
+        border: 3px solid;
+    }
+    
+    .disgust {
+        height: 16px;
+        width: 16px;
+        border-radius: 30px;
+        background: #ab78a5;
+        margin: 10px;
+    }
+    
+    .fear {
+        height: 16px;
+        width: 16px;
+        border-radius: 30px;
+        background: #8c9379;
+        margin: 10px;
+    }
+    
+    .joy {
+        height: 16px;
+        width: 16px;
+        border-radius: 30px;
+        background: #FDD430;
+        margin: 10px;
+    }
+    
+    .sadness {
+        height: 16px;
+        width: 16px;
+        border-radius: 30px;
+        background: #ee7581;
+        margin: 10px;
+    }
+    
+    .modelabel {
+        font-size: 9px;
+        font-family: sans-serif;
+        margin: 5px;
+        color: #555;
+        font-weight: bold;
+        letter-spacing: 1px;
+        width: 50px;
+        text-align: center;
+    }
+    
+    .samplemode {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+    /* - - - - - - */
+    
+    .onoffswitch {
+        position: relative;
+        width: 40px;
+        margin: 10px;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+    }
+    
+    .onoffswitch-checkbox {
+        display: none;
+    }
+    
+    .onoffswitch-label {
+        display: block;
+        overflow: hidden;
+        cursor: pointer;
+        height: 4px;
+        padding: 0;
+        line-height: 4px;
+        border: 0px solid #FFFFFF;
+        border-radius: 20px;
+        background-color: #CCCCCC;
+    }
+    
+    .words {
+        position: absolute;
+        background: transparent;
+        font-size: 1em;
+        line-height: 1em;
+        font-family: arial;
+        width: 300px;
+        height: 430px;
+        padding: 20px;
+        border: none;
+        color: olive;
+        font-size: 14px;
+        line-height: 22px;
+        font-weight: lighter;
+    }
+    
+    .onoffswitch-label:before {
+        content: "";
+        display: block;
+        width: 18px;
+        margin: -7px;
+        background: #FD7D50;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        right: 32px;
+        border-radius: 18px;
+        box-shadow: none;
+    }
+    
+    .onoffswitch-checkbox:checked + .onoffswitch-label {
+        background-color: #CCCCCC;
+    }
+    
+    .onoffswitch-checkbox:checked + .onoffswitch-label,
+    .onoffswitch-checkbox:checked + .onoffswitch-label:before {
+        border-color: #CCCCCC;
+    }
+    
+    .onoffswitch-checkbox:checked + .onoffswitch-label .onoffswitch-inner {
+        margin-left: 0;
+    }
+    
+    .onoffswitch-checkbox:checked + .onoffswitch-label:before {
+        right: 0px;
+        background-color: #FD7D50;
+        box-shadow: none;
+    }
+    
+    .product {
+        color: #555;
+        font-weight: bold;
+        font-size: 9px;
+        font-family: sans-serif;
+        line-height: 24px;
+        letter-spacing: 4;
+    }

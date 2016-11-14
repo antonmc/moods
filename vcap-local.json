@@ -1,0 +1,44 @@
+{
+    "services": {
+        "speech_to_text": [
+            {
+                "credentials": {
+                    "url": "https://stream.watsonplatform.net/speech-to-text/api",
+                    "password": "Jj8xAAgRrb2j",
+                    "username": "5067c191-3320-43e7-b7d2-e4fba517c1fc"
+                },
+                "syslog_drain_url": null,
+                "label": "speech_to_text",
+                "provider": null,
+                "plan": "standard",
+                "name": "moods-stt",
+                "tags": [
+        "watson",
+        "ibm_created",
+        "ibm_dedicated_public"
+      ]
+    }
+  ],
+        "tone_analyzer": [
+            {
+                "credentials": {
+                    "url": "https://gateway.watsonplatform.net/tone-analyzer/api",
+                    "password": "aPZ4bd1GDjsZ",
+                    "username": "2ceb5239-e266-4562-85a4-3833f39a3c72"
+                },
+                "syslog_drain_url": null,
+                "label": "tone_analyzer",
+                "provider": null,
+                "plan": "standard",
+                "name": "tone-analyzer-moods",
+                "tags": [
+        "watson",
+        "ibm_created",
+        "ibm_dedicated_public"
+      ]
+    }
+  ]
+
+
+    }
+}

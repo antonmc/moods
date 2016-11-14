@@ -1,0 +1,148 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="stylesheets/radio.css">
+
+    <script type="text/javascript" src="vendor/smoothie/smoothie.js"></script>
+    <script src="js/dial.js"></script>
+    <script src="js/chart.js"></script>
+
+</head>
+
+<body>
+
+    <div class="frame">
+
+        <div class="case">
+            <div class="screws">
+                <div class="screw">
+                    <div class="left"></div>
+                    <div class="right"></div>
+                </div>
+                <div class="product">TONE ANALYZER</div>
+                <div class="screw2">
+                    <div class="left"></div>
+                    <div class="right"></div>
+                </div>
+            </div>
+            <div class="tuner">
+                <div id="timeLine"></div>
+            </div>
+
+
+            <!--
+            <div class="logo">
+    <img class="logoImage" src="images/ibmbluemix.svg">
+</div>
+-->
+            <div class="section">
+                <div class="grill" id="grill">
+                    <textarea class="words" readonly="" id="resultsText" dir="auto"></textarea>
+                    <svg width="100%" height="100%" xmlns="http://www.w3.org/2000/svg">
+                        <defs>
+                            <pattern id="smallGrid" width="2" height="2" patternUnits="userSpaceOnUse">
+                                <path d="M 8 0 L 0 0 0 8" fill="none" stroke="#8F9C78" stroke-width="0.5" />
+                            </pattern>
+                            <pattern id="grid" width="80" height="80" patternUnits="userSpaceOnUse">
+                                <rect width="80" height="80" fill="url(#smallGrid)" />
+                                <!--                                <path d="M 80 0 L 0 0 0 80" fill="none" stroke="gray" stroke-width="1" />-->
+                            </pattern>
+                        </defs>
+
+                        <rect width="100%" height="100%" fill="url(#grid)" />
+                    </svg>
+                </div>
+                <div class="knobs">
+
+                    <div id="controlBar" class="emotion-block">
+                        <!--                        <div id="controlBar"></div>-->
+                        <!-- div class="control">
+                            <div class="anger"></div>
+                            <label class="controlLabel">ANGER</label>
+                        </div>
+
+                        <div class="control">
+                            <div class="disgust"></div>
+                            <label class="controlLabel">DISGUST</label>
+                        </div>
+
+                        <div class="control">
+                            <div class="fear"></div>
+                            <label class="controlLabel">FEAR</label>
+                        </div>
+
+                        <div class="control">
+                            <div class="joy"></div>
+                            <label class="controlLabel">JOY</label>
+                        </div>
+
+                        <div class="control">
+                            <div class="sadness"></div>
+                            <label class="controlLabel">SADNESS</label>
+                        </div -->
+                    </div>
+                    <div id="dial" class="dial">
+                        <div class="dialLabels">
+                            <div class="modelabel">EMOTION</div>
+                            <div class="modelabel">WRITING</div>
+                            <div class="modelabel">SOCIAL</div>
+                        </div>
+                        <canvas id="knob" width="180" height="180"></canvas>
+                    </div>
+                    <div class="samplemode">
+                        <div class="modelabel">DOCUMENT</div>
+                        <div class="onoffswitch">
+                            <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="myonoffswitch" data-level="sentence" checked>
+                            <label class="onoffswitch-label" for="myonoffswitch"></label>
+                        </div>
+                        <div class="modelabel">SENTENCE</div>
+                    </div>
+                    <div class="controls">
+                        <div class="button-block">
+                            <div class="control">
+                                <div id="recordButton" class="record"></div>
+                                <label class="controlLabel">RECORD</label>
+                            </div>
+                            <div class="control">
+                                <div class="button play-sample-1"></div>
+                                <label class="controlLabel">PLAY</label>
+                            </div>
+                            <!-- div class="control">
+                                <div class="button"></div>
+                                <label class="controlLabel">SAMPLE</label>
+                            </div -->
+                            <!--
+                         <div class="control">
+    <div onclick="prepareDataForSave()" class="button"></div>
+    <label class="controlLabel">SAVE</label>
+</div>
+-->
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="screws">
+                <div class="screw2">
+                    <div class="left"></div>
+                    <div class="right"></div>
+                </div>
+                <div class="screw">
+                    <div class="left"></div>
+                    <div class="right"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript" src="vendor/jquery/jquery.min.js"></script>
+
+    <script type="text/javascript" src="js/index.js"></script>
+    <script type="text/javascript" src="js/chart.js"></script>
+    <script type="text/javascript" src="js/tone.js"></script>
+    <script type="text/javascript" src="js/process.js"></script>
+    <script type="text/javascript" src="js/save.js"></script>
+</body>
+
+</html>

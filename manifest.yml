@@ -1,0 +1,19 @@
+---
+declared-services:
+  rtt-speech-to-text:
+    label: speech_to_text
+    plan: standard
+  rtt-tone-analyzer:
+    label: tone_analyzer
+    plan: beta
+applications:
+- name: moods 
+  host: moods 
+  memory: 256M
+  instances: 1
+  path: .
+  command: node app.js
+  disk_quota: 1024M
+  services:
+  - tone-analyzer-moods
+  - moods-stt
