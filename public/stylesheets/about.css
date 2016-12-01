@@ -1,0 +1,108 @@
+body {
+    padding: 0;
+    margin: 0;
+    background-color: #F3F1EB;
+    /* font-family: 'Open Sans', sans-serif; */
+    font-family: 'Karla', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    color: #333;
+    background-image: url("http://subtlepatterns2015.subtlepatterns.netdna-cdn.com/patterns/retina_wood.png");
+}
+
+.top {
+    margin: 0;
+    padding: 0;
+    height: 200px;
+    border-bottom: 1px solid #999;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    /* box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.2); */
+}
+
+.bar {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    flex-direction: row;
+    max-width: 606px;
+    justify-content: center;
+    width: 606px;
+}
+
+.title {
+    display: flex;
+    flex: 2 0 0;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.blackstar {
+    width: 160px;
+    height: 160px;
+}
+
+.about {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    margin: 40px;
+}
+
+.narrative {
+    display: flex;
+    width: 1000px;
+    border-bottom: 1px solid #999;
+}
+
+.panel {
+    align-self: center;
+    width: 50%;
+    align-content: center;
+    font-size: 12px;
+    color: #111;
+    padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    margin: 20px;
+    border-radius: 10px;
+    padding-bottom: 20px;
+    padding-top: 10px;
+    height: 500px;
+    padding: 20px;
+}
+
+a {
+    text-decoration: none;
+    color: #B93A31;
+    font-weight: bold;
+}
+
+p {
+    line-height: 20px;
+}
+
+.littlewonder {
+    font-size: 20px;
+    font-weight: bold;
+    /* color: #9692a1; */
+}
+
+.widepanel {
+    width: 100%;
+    font-size: 12px;
+    color: #555;
+    padding-top: 20px;
+    margin: 20px;
+    border-radius: 10px;
+    padding-top: 10px;
+    width: 1000px;
+    padding: 20px;
+}
