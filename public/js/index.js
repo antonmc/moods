@@ -210,7 +210,15 @@
             function onClose(evt) {
                 localStorage.setItem("currentlyDisplaying", "false"), onend(evt), console.log("Socket closing: ", evt)
             }
-
+            localStorage.setItem("currentlyDisplaying", type), $.subscribe("progress", function (evt, data) {
+                console.log("progress: ", data)
+            }), console.log("contentType", contentType);
+            var baseString = "",
+                baseJSON = "";
+            $.subscribe("showjson", function () {
+                var $resultsJSON = $("#resultsJSON");
+                $resultsJSON.empty(), $resultsJSON.append(baseJSON)
+            });
             var options = {};
             options.token = token, options.message = {
                 action: "start",
@@ -257,7 +265,13 @@
                 var err = new Error("Microphone transcription cannot accomodate narrowband models, please select another");
                 return callback(err, null), !1
             }
-            
+            $.publish("clearscreen");
+            var baseString = "",
+                baseJSON = "";
+            $.subscribe("showjson", function () {
+                var $resultsJSON = $("#resultsJSON");
+                $resultsJSON.empty(), $resultsJSON.append(baseJSON)
+            });
             var options = {};
             options.token = token, options.message = {
                 action: "start",
